@@ -375,6 +375,12 @@
     .solution:last-child { border-bottom: none; }
     .solution:hover { background: #1a1a1a; }
 
+    .solution-highlighted {
+      background: rgba(0, 255, 136, 0.06);
+      border-left: 4px solid var(--green);
+    }
+    .solution-highlighted:hover { background: rgba(0, 255, 136, 0.1); }
+
     .solution-info { flex: 1; }
 
     .solution-name {
@@ -1064,7 +1070,7 @@
       </p>
 
       <div class="solutions-grid">
-        <div class="solution">
+        <div class="solution solution-highlighted">
           <div class="solution-info">
             <div class="solution-name">Membrane</div>
             <div class="solution-desc">Typed, revisable, decayable memory in Go. Episodic, semantic, competence, and plan types. Trust-aware retrieval.</div>
